@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 5</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* .container{
+            margin: 20px 30px;
+        } */
+      .box {
+        display: flex;
+      }
+      .box img {
+        width: 50%;
+        background-size: cover;
+      }
+      .box .sec-img {
+        width: 50%;
+      }
+      .box .text {
+        margin: 30px 20px 15px 20px;
+      }
+      .box .text p {
+        text-align: justify;
+        margin-bottom: 20px;
+      }
+      @media screen and (max-width: 576px) {
+        .box {
+          display: flex;
+          flex-direction: column;
+        }
+        .box img {
+          width: 100%;
+          background-size: cover;
+        }
+        .sec-box {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+        .box .sec-img{
+            display: flex;
+            width: 100%;
+        }
+      }
+      @media screen and (min-width: 577px) and (max-width: 900px) {
+        .text h2{
+            font-size: 16px;
+        }
+        .text p{
+            font-size: 10px;
+        }
+      }
+      @media screen and (min-width: 901px) and (max-width: 1200px) {
+        .text h2{
+            font-size: 18px;
+        }
+        .text p{
+            font-size: 13px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="images/dhaka.jpg" alt="shaplachottor" />
+        <div class="text">
+          <h2>Dhaka : "The city of Suffering"</h2>
+          <p>
+            Describing Dhaka, the capital of Bangladesh, as the "City of
+            Suffering" may be overly negative and not fully representative of
+            the city's diverse and dynamic aspects. Dhaka is a densely populated
+            metropolis facing challenges such as traffic congestion, air
+            pollution, and inadequate infrastructure. However, it is also a city
+            with a rich cultural heritage, vibrant markets, and a resilient
+            population. While acknowledging the difficulties some residents may
+            face, it's crucial to present a balanced view that captures both the
+            struggles and the positive aspects of life in Dhaka.
+          </p>
+          <p>
+            Dhaka, the capital of Bangladesh, is a city with a multitude of
+            positive aspects that contribute to its unique charm. One notable
+            feature is its rich cultural heritage, evident in the city's
+            historical landmarks, vibrant festivals, and diverse arts scene.
+            Dhaka is home to numerous museums, showcasing the country's history
+            and artistic achievements. The city is also a hub for delicious
+            Bangladeshi cuisine, with its bustling street markets and
+            traditional eateries offering a wide array of flavorful dishes.
+            Despite its challenges, Dhaka is characterized by the warmth and
+            resilience of its people, who contribute to a sense of community and
+            solidarity. Additionally, the city is experiencing economic growth,
+            and its skyline is evolving with modern infrastructure developments.
+            Dhaka's positive attributes demonstrate the resilience and vibrancy
+            of its inhabitants and contribute to the multifaceted tapestry of
+            urban life in Bangladesh.
+          </p>
+        </div>
+      </div>
+      <div class="box sec-box">
+        <div class="text">
+          <h2>Chittagong : "The city of Business"</h2>
+          <p>
+            Describing Dhaka, the capital of Bangladesh, as the "City of
+            Suffering" may be overly negative and not fully representative of
+            the city's diverse and dynamic aspects. Dhaka is a densely populated
+            metropolis facing challenges such as traffic congestion, air
+            pollution, and inadequate infrastructure. However, it is also a city
+            with a rich cultural heritage, vibrant markets, and a resilient
+            population. While acknowledging the difficulties some residents may
+            face, it's crucial to present a balanced view that captures both the
+            struggles and the positive aspects of life in Dhaka.
+          </p>
+          <p>
+            Dhaka, the capital of Bangladesh, is a city with a multitude of
+            positive aspects that contribute to its unique charm. One notable
+            feature is its rich cultural heritage, evident in the city's
+            historical landmarks, vibrant festivals, and diverse arts scene.
+            Dhaka is home to numerous museums, showcasing the country's history
+            and artistic achievements. The city is also a hub for delicious
+            Bangladeshi cuisine, with its bustling street markets and
+            traditional eateries offering a wide array of flavorful dishes.
+            Despite its challenges, Dhaka is characterized by the warmth and
+            resilience of its people, who contribute to a sense of community and
+            solidarity. Additionally, the city is experiencing economic growth,
+            and its skyline is evolving with modern infrastructure developments.
+            Dhaka's positive attributes demonstrate the resilience and vibrancy
+            of its inhabitants and contribute to the multifaceted tapestry of
+            urban life in Bangladesh.
+          </p>
+        </div>
+        <img class="sec-img" src="images/chittagong.jpg" alt="river" />
+      </div>
+    </div>
+  </body>
+</html>
