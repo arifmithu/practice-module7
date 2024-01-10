@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        margin: 20px 30px;
+        border: 2px solid tomato;
+        justify-content: center;
+        height: 90vh;
+      }
+      .first-col h3 {
+        height: 90vh;
+      }
+      .container h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .first-col {
+        background-color: aqua;
+      }
+      .second-col {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 10px;
+        overflow: hidden;
+      }
+      .sec-col-first-row {
+        background-color: yellowgreen;
+      }
+      .sec-col-sec-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+      }
+      .sec-col-sec-row-first-col {
+        background-color: violet;
+      }
+      .sec-col-sec-row-sec-col {
+        background-color: burlywood;
+      }
+      .container1{
+        margin: 20px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+      }
+      .target {
+        background-color: greenyellow;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .old {
+        background-color: rgb(240, 107, 107);
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      @media screen and (max-width: 576px) {
+        .container {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          row-gap: 10px;
+        }
+        .sec-col-sec-row {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          row-gap: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="first-col">
+        <h3>using</h3>
+      </div>
+      <div class="second-col">
+        <h3 class="sec-col-first-row">grid</h3>
+        <div class="sec-col-sec-row">
+          <h3 class="sec-col-sec-row-first-col">for the</h3>
+          <h3 class="sec-col-sec-row-sec-col">first time</h3>
+        </div>
+      </div>
+    </div>
+    <div class="container1">
+      <h4>
+        to see the next task , type " <span class="target">task-3.html</span> "
+        instead of <span class="old">task-2.html</span>
+      </h4>
+    </div>
+  </body>
+</html>

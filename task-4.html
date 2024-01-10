@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 4</title>
+    <style>
+      h1 {
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        background-color: red;
+        margin: 0 30px;
+      }
+      .container {
+        margin: 20px 30px;
+      }
+      .box {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        border: 2px solid black;
+        margin-bottom: 20px;
+      }
+      .box img {
+        width: 50%;
+        background-size: cover;
+      }
+      .box .text {
+        width: auto;
+        margin-left: -290px;
+      }
+      .box .text p {
+        text-align: justify;
+        padding-right: 10px;
+      }
+      .box .text .primary-btn {
+        position: relative;
+        bottom: 10px;
+        background-color: blue;
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+        height: 30px;
+      }
+      .box .image {
+        height: 100%;
+      }
+      @media screen and (max-width: 576px) {
+        .container {
+          margin: 20px 30px;
+        }
+        .box {
+          display: grid;
+          grid-template-columns: repeat(1, 100%);
+          border: 2px solid black;
+          margin-bottom: 20px;
+        }
+        .box img{
+            width: 100%;
+        }
+        .box .text{
+            width: auto;
+            margin-left: 0;
+            padding: 0 0 0 15px;
+        }
+      }
+      @media screen and (min-width: 577px) and (max-width: 900px) {
+        .container {
+          margin: 20px 30px;
+        }
+        .box {
+          display: grid;
+          grid-template-columns: repeat(1, 100%);
+          border: 2px solid black;
+          margin-bottom: 20px;
+        }
+        .box img{
+            width: 100%;
+        }
+        .box .text{
+            width: auto;
+            margin-left: 0;
+            padding: 0 0 0 15px;
+        }
+      }
+      @media screen and (min-width: 901px) and (max-width: 1200px) {
+        .container {
+          margin: 20px 30px;
+        }
+        .box {
+          display: grid;
+          grid-template-columns: 40% 59%;
+          border: 2px solid black;
+          margin-bottom: 20px;
+        }
+        .box img{
+            width: 100%;
+            height: 100%;
+        }
+        .box .text{
+            width: auto;
+            margin-left: 0;
+            padding: 0 0 0 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Our Best foods</h1>
+    <div class="container">
+      <div class="box">
+        <img src="images/noodles.webp" alt="noodeles image" />
+        <div class="text">
+          <h2>Mexican Spicy Noodles</h2>
+          <p>
+            Mexican spicy noodles are a delectable fusion of traditional Mexican
+            flavors with the beloved concept of Asian noodles. These noodles
+            typically boast a rich and savory broth infused with a fiery blend
+            of spices, including chili peppers, cumin, and garlic, creating a
+            robust and satisfying taste. The dish often features a medley of
+            fresh vegetables, such as bell peppers, onions, and cilantro, adding
+            a vibrant and crunchy texture to each slurp-worthy bite. Some
+            variations might include protein sources like grilled chicken or
+            shrimp, enhancing the overall depth of flavor. Whether enjoyed as a
+            quick street food snack or as a comforting meal at home, Mexican
+            spicy noodles tantalize taste buds with their zesty kick, embodying
+            the culinary diversity that makes Mexican cuisine truly exceptional.
+          </p>
+          <button class="primary-btn">Read More</button>
+        </div>
+      </div>
+      <div class="box">
+        <img class="image" src="images/pasta.jpg" alt="pasta image" />
+        <div class="text">
+          <h2>Mexican Fideo Pasta</h2>
+          <p>
+            Mexican fideo pasta is a beloved and traditional dish that reflects
+            the country's culinary creativity. Typically made with short, thin
+            noodles, the fideo is first toasted in oil until golden brown,
+            imparting a rich, nutty flavor to the dish. The toasted noodles are
+            then simmered in a flavorful broth made with tomatoes, onions, and
+            spices, creating a savory and comforting pasta experience. Fideo is
+            often served as a side dish or a standalone meal, embodying the
+            essence of Mexican comfort food. Its simplicity, combined with the
+            aromatic blend of spices, makes fideo a cherished dish enjoyed in
+            households across Mexico, showcasing the country's ability to infuse
+            distinctive flavors into classic dishes.
+          </p>
+          <button class="primary-btn">Read More</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
